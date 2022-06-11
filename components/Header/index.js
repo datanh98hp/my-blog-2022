@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Nav() {
     // 
@@ -14,22 +15,22 @@ export default function Nav() {
                         <div>
                             {/* <!-- Website Logo --> */}
                             <a href="#" className="flex items-center py-4 px-2">
-                                <img src="/vercel.svg" alt="Logo" className="h-8 w-8 mr-2" />
-                                <span className="font-semibold text-gray-500 text-lg">Navigation</span>
+                                <Image src="/vercel.svg" alt="Logo" width={30} height={30} className="h-8 w-8 mr-2" />
+                                <span className="font-semibold text-gray-500 text-lg"></span>
                             </a>
                         </div>
                         {/* <!-- Primary Navbar items --> */}
                         <div className="hidden md:flex items-center space-x-3">
-                            <a href="" className="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
-                            <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
-                            <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
-                            <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
+                            <Link href="#Home" className="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</Link>
+                            <Link href="#Home" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</Link>
+                            <Link href="#Home" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</Link>
+                            <Link href="#Home" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</Link>
                         </div>
                     </div>
                     {/* <!-- Secondary Navbar items --> */}
                     <div class="hidden md:flex items-center space-x-3 ">
-                        <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
-                        <a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+                        <Link href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</Link>
+                        <Link href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</Link>
                     </div>
                     {/* <!-- Mobile menu button --> */}
                     <div className="md:hidden flex items-center">
@@ -52,10 +53,10 @@ export default function Nav() {
             {/* <!-- mobile menu --> */}
             <div className={`mobile-menu ${activeMobileMenu ? "" : "hidden"}`}>
                 <ul className="bg-slate-200 flex flex-col">
-                    <li className="active"><a href="/" className="block text-sm px-2 py-4 hover:text-white hover:bg-green-500 font-bold">Home</a></li>
-                    <li><a href="#services" className="block text-sm px-2 py-4 hover:text-white hover:bg-green-500  transition duration-300">Services</a></li>
-                    <li><a href="#about" className="block text-sm px-2 py-4 hover:text-white hover:bg-green-500  transition duration-300">About</a></li>
-                    <li><a href="#contact" className="block text-sm px-2 py-4 hover:text-white hover:bg-green-500  transition duration-300">Contact Us</a></li>
+                    <li className="active"><Link href="/" className="block text-sm px-2 py-4 hover:text-white hover:bg-green-500 font-bold">Home</Link></li>
+                    <li><Link href="#services" className="block text-sm px-2 py-4 hover:text-white hover:bg-green-500  transition duration-300">Services</Link></li>
+                    <li><Link href="#about" className="block text-sm px-2 py-4 hover:text-white hover:bg-green-500  transition duration-300">About</Link></li>
+                    <li><Link href="#contact" className="block text-sm px-2 py-4 hover:text-white hover:bg-green-500  transition duration-300">Contact Us</Link></li>
                 </ul>
                 <ul className='more-inf flex flex-row justify-evenly p-3'>
                     <li>Facebook</li>
