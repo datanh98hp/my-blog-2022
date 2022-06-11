@@ -14,10 +14,9 @@ export default function Nav() {
                     <div className="flex space-x-7">
                         <div>
                             {/* <!-- Website Logo --> */}
-                            <a href="#" className="flex items-center py-4 px-2">
+                            {/* <Link href={'/'} className="flex items-center py-4 px-2">
                                 <Image src="/vercel.svg" alt="Logo" width={30} height={30} className="h-8 w-8 mr-2" />
-                                <span className="font-semibold text-gray-500 text-lg"></span>
-                            </a>
+                            </Link> */}
                         </div>
                         {/* <!-- Primary Navbar items --> */}
                         <div className="hidden md:flex items-center space-x-3">
