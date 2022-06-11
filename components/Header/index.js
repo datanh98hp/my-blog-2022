@@ -29,8 +29,8 @@ export default function Nav() {
                     </div>
                     {/* <!-- Secondary Navbar items --> */}
                     <div class="hidden md:flex items-center space-x-3 ">
-                        <Link href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</Link>
-                        <Link href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</Link>
+                        <Link href="" className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</Link>
+                        <Link href="" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</Link>
                     </div>
                     {/* <!-- Mobile menu button --> */}
                     <div className="md:hidden flex items-center">
