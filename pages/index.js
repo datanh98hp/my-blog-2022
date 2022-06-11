@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <div className=''>      
       <Header />
-      <div className='title-category md:mx-20 shadow-xl border-b rounded-xl mt-2'>
-        <div className='p-4'>
-          <h2>Featured Post</h2>
-        </div>
+      <div className='title-category flex justify-center md:mx-20 shadow-xl border-2 rounded-xl'>
+          <div className='p-4'>
+            <h2>Newest Post</h2>
+          </div>
       </div>
       <div className='featured grid grid-flow-row md:grid-cols-5 md:grid-row-2 gap-4 md:m-14 my-5 px-10'>
         <div className='col-span-2 row-span-2'>
@@ -41,7 +41,7 @@ export default function Home() {
           <Card />
         </div>
       </div>
-      <div className='title-category md:mx-20 shadow-xl  border-b rounded-xl'>
+      <div className='title-category flex justify-center md:mx-20 shadow-xl border-2 rounded-xl'>
           <div className='p-4'>
             <h2>Newest Post</h2>
           </div>

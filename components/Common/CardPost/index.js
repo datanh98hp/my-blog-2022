@@ -2,14 +2,10 @@ import React from 'react';
 import Image from 'next/image'
 export default function index() {
     return (
-        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="h-f border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
             <div className="">
                 <div className="w-full flex p-2">
-                    <div className="p-2 ">
-                        <img
-                            src="https://cdn.dribbble.com/users/1305593/screenshots/18437994/media/cdab872b464385e6aeea562436a0d523.gif" alt="author"
-                            className="w-10 h-10 rounded-full overflow-hidden" />
-                    </div>
+                    
                     <div className="pl-2 pt-2 ">
                         <p className="font-bold">Vipin Bansal</p>
                         <p className="text-xs">2 June 2022</p>
@@ -17,7 +13,7 @@ export default function index() {
                 </div>
             </div>
 
-            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://cdn.dribbble.com/users/1305593/screenshots/18437994/media/cdab872b464385e6aeea562436a0d523.gif" alt="blog cover" />
+            <Image height={500} width={700} className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://cdn.dribbble.com/users/1305593/screenshots/18437994/media/cdab872b464385e6aeea562436a0d523.gif" alt="blog cover" />
             <div className="p-4">
                 <h2 className="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Web development</h2>
                 <h3 className="title-font text-lg font-medium text-gray-900 mb-3 truncate ">Labore laborum exercitation fugiat non duis incididunt dolore ut excepteur. Do ea consectetur nostrud sit aliquip pariatur et duis incididunt laboris incididunt. Commodo sit nostrud eu est commodo irure velit ex enim elit.Exercitation nostrud consectetur duis reprehenderit minim enim quis magna proident ad anim culpa. Non deserunt exercitation magna duis ad. Irure officia esse labore nulla veniam magna est elit cupidatat consequat pariatur enim veniam in. Do cupidatat qui occaecat exercitation adipisicing aliquip laborum magna fugiat consequat aliqua dolor. Ipsum sint esse aute amet reprehenderit cillum elit aliquip Lorem laborum anim. Irure pariatur commodo Lorem mollit culpa eiusmod occaecat nulla aliqua culpa minim fugiat ex.

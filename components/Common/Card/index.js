@@ -1,13 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import TagShape from '../TagCategory/TagShape'
-
+import Image from 'next/image'
 function Card(props) {
     return (
-        <div className="overflow-hidden cursor-pointer rounded-xl relative group">
-            <div className='absolute absolute right-0 top-0'>
-                <TagShape title="Feature" />
-            </div>
+        <div className="h-full overflow-hidden cursor-pointer rounded-xl relative group ">
+            
             <div className="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
                 <div>
                     <div
@@ -23,12 +21,18 @@ function Card(props) {
                         </div>
                     </div>
                 </div>
+                
             </div>
-            <img
+            <Image
                 alt=""
+                width="700"
+                height="700"
                 className="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
                 src="https://images.unsplash.com/photo-1650790362847-3c1dd609d0c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
             />
+            <div className='absolute absolute right-0 top-0'>
+                <TagShape title="Feature" />
+            </div>
         </div>
     )
 }
