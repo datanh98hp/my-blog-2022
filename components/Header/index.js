@@ -27,7 +27,7 @@ export default function Nav() {
                         <Link href="/signup" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</Link>
                     </div>
                     {/* <!-- Mobile menu button --> */}
-                    <div className="md:hidden flex items-center">
+                    {/* <div className="md:hidden flex items-center">
                         <button className="outline-none mobile-menu-button" onClick={() => setactiveMobileMenu(!activeMobileMenu)}>
                             <svg className=" w-6 h-6 text-gray-500 hover:text-green-500 "
                                
@@ -41,7 +41,7 @@ export default function Nav() {
                                 <path d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {/* <!-- mobile menu --> */}
