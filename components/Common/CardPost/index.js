@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 export default function index() {
     return (
         <div className="h-f border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
@@ -19,14 +20,14 @@ export default function index() {
                 <h3 className="title-font text-lg font-medium text-gray-900 mb-3 truncate ">Labore laborum exercitation fugiat non duis incididunt dolore ut excepteur. Do ea consectetur nostrud sit aliquip pariatur et duis incididunt laboris incididunt. Commodo sit nostrud eu est commodo irure velit ex enim elit.Exercitation nostrud consectetur duis reprehenderit minim enim quis magna proident ad anim culpa. Non deserunt exercitation magna duis ad. Irure officia esse labore nulla veniam magna est elit cupidatat consequat pariatur enim veniam in. Do cupidatat qui occaecat exercitation adipisicing aliquip laborum magna fugiat consequat aliqua dolor. Ipsum sint esse aute amet reprehenderit cillum elit aliquip Lorem laborum anim. Irure pariatur commodo Lorem mollit culpa eiusmod occaecat nulla aliqua culpa minim fugiat ex.
                     Cupidatat excepteur magna proident consectetur et elit incididunt laboris velit et ipsum qui duis aliqua. Do reprehenderit aliquip tempor labore excepteur aliqua nisi consequat exercitation. Quis esse proident commodo enim ipsum. Amet incididunt minim labore non sunt in sit. Sint do cillum ullamco sit cupidatat ipsum ea aliqua magna qui magna ad dolor. Dolor nulla tempor anim deserunt est pariatur nisi aliqua fugiat. Cillum veniam aliquip ea laboris esse irure nisi nulla officia exercitation cupidatat minim.</h3>
                 <div className="flex items-center flex-wrap ">
-                    <a href="/" className="text-green-800  md:mb-2 lg:mb-0">
+                    <Link href="/" className="text-green-800  md:mb-2 lg:mb-0">
                         <p className="inline-flex items-center">Read Blog
                             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5l7 7-7 7"></path>
                             </svg>
                         </p>
-                    </a>
+                    </Link>
                     <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                         <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round">
                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
